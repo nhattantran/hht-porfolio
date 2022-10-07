@@ -1,0 +1,108 @@
+.page-header {
+    width: 100%;
+    position: fixed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    animation: 2s ease-out 0s 1 fadeIn;
+    transition: all 0.2s ease-out 0s;
+}
+
+.header-scroll {
+    /* border-bottom: 3px solid #797878; */
+    backdrop-filter: blur(15px) !important;
+    background-color: #1b1a2ea9!important;
+    box-shadow: 0 10px 10px 0 rgba(9,5,29,.171)!important;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.my-name {
+    color: rgb(119, 37, 167);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.header-button {
+    margin-left: 25px;
+    color: rgb(119, 37, 167);
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    justify-content: center;
+}
+
+@media (max-width: 1200) {
+    .header-button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+a.header-button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+a.header-button::after {
+    content: "";
+    position: relative;
+    background-color: #c95bf5;
+    bottom: 1px;
+    left: 0px;
+    height: 5px;
+    width: 0;
+    transition: all .3s ease-out 0s;
+    display: block;
+    border-radius: 16px;
+}
+
+.header-button:hover::after {
+    width: 100%;
+}
+
+.header-menu a {
+    text-decoration: none;
+}
+
+.header-button-icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+
+.login-button {
+    color: #fff !important;
+    background-color: #7f119b !important;
+    border: 1px solid #670780 !important;
+    border-radius: 7px;
+    padding: 7px 7px 0px 7px;
+    font-size: 15px !important;
+    line-height: 1.4em;
+    vertical-align: middle;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background-color: #c10fee !important;
+}

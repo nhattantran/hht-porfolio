@@ -1,0 +1,134 @@
+.homepage-container {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-cover-image {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 300px;
+    background-image: url('./img/cover.jpg');
+    background-size: cover;
+    background-position: 50% 70%;
+    border-radius: 10px;
+}
+
+.homepage-information {
+    display: block;
+    width: 98%;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    top: -100px;
+    min-height: 500px;
+    padding: 20px 10px 20px 10px;
+}
+
+.homepage-content-header {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homepage-content-header-profile {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.homepage-content-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(48, 212, 185);
+    object-fit: cover;
+    text-align: center;
+    object-position: center 30%;
+}
+
+.homepage-content-header-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(66, 66, 66);
+}
+
+.homepage-content-header-job {
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(179, 179, 179);
+}
+
+.homepage-content-header-major {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.homepage-content-header-major-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(66, 66, 66);
+}
+
+@media (max-width: 768px) {
+    .homepage-content-header-major {
+        text-align: center;
+        justify-content: left;
+    }
+
+    .homepage-content-header-major-name {
+        margin-left: 0px;
+    }
+}
+
+.homepage-content-header-gpa {
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(148, 147, 147);
+}
+
+.homepage-content-body {
+    margin-top: 10px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.homepage-content-body-column {
+    font-family: "Roboto", sans-serif !important;
+    padding-right: 10px;
+}
+
+.homepage-content-column-header {
+    font-size: 17px;
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+}
+
+.homepage-content-column-body {
+    font-size: 15px;
+    color:rgb(122, 120, 120);
+    text-align:  justify;
+}
+
+.homepage-content-column-body b {
+    color:rgb(66, 66, 66);
+    text-align: left !important;
+}
